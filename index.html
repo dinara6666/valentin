@@ -49,6 +49,8 @@
             cursor: pointer;
             transition: 0.3s;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            display: block;
+            margin: 10px auto;
         }
         .btn:hover {
             background: #ff1a4d;
@@ -64,15 +66,6 @@
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
-        .sticker {
-            display: none;
-            margin-top: 20px;
-            width: 200px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
         .floating-hearts span {
             position: absolute;
             bottom: -10px;
@@ -87,6 +80,7 @@
         @media (max-width: 768px) {
             h1 { font-size: 2.5em; }
             .btn { font-size: 18px; padding: 12px 25px; }
+            #musicLink { margin-top: 10px; }
         }
     </style>
 </head>
@@ -104,13 +98,11 @@
         <p>Любовь - это волшебство, которое наполняет наши сердца светом и теплом. Подари улыбку и любовь тем, кто тебе дорог! 💕</p>
         <button class="btn" onclick="showMessage()">Нажми меня</button>
         <p id="message">if the world was ending, <br> i'd wanna be next to you💕</p>
-     
         <a id="musicLink" class="btn" href="https://youtu.be/kPa7bsKwL-c?si=k94n42wJDD5n0MIN" target="_blank">Включить музыку 🎶</a>
     </div>
     <script>
         function showMessage() {
             document.getElementById("message").style.display = "block";
-            document.getElementById("sticker").style.display = "block";
         }
     </script>
 </body>
